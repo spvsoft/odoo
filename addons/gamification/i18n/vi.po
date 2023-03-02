@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* gamification
-#
+# 
 # Translators:
 # Martin Trigaux, 2020
 # fanha99 <fanha99@hotmail.com>, 2020
@@ -12,6 +12,7 @@
 # Phuc Tran Thanh <phuctran.odoo@gmail.com>, 2020
 # Duy BQ <duybq86@gmail.com>, 2020
 # Trần Hà <tranthuha13590@gmail.com>, 2021
+# Vo Thanh Thuy, 2022
 #
 msgid ""
 msgstr ""
@@ -19,12 +20,12 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-29 15:48+0000\n"
 "PO-Revision-Date: 2020-09-07 08:12+0000\n"
-"Last-Translator: Trần Hà <tranthuha13590@gmail.com>, 2021\n"
+"Last-Translator: Vo Thanh Thuy, 2022\n"
 "Language-Team: Vietnamese (https://www.transifex.com/odoo/teams/41243/vi/)\n"
-"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. module: gamification
@@ -1768,6 +1769,8 @@ msgid ""
 "In batch mode, this indicates which field distinguishes one user from the "
 "other, e.g. user_id, partner_id..."
 msgstr ""
+"Trong chế độ hàng loạt, đây là yếu tố chỉ ra trường nào phân biệt các người "
+"dùng, ví dụ: user_id, partner_id, v.v."
 
 #. module: gamification
 #: model:ir.model.fields,help:gamification.field_gamification_goal__last_update

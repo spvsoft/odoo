@@ -19,7 +19,7 @@
 # Thin Tran <trvathin@gmail.com>, 2022
 # Bùi Thế Anh, 2022
 # Thi Huong Nguyen, 2023
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
@@ -54,7 +54,7 @@ msgstr "SL Hoá đơn Nhà cung cấp"
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_report__nbr_lines
 msgid "# of Lines"
-msgstr "Số lượng dòng"
+msgstr "SL dòng"
 
 #. module: purchase
 #: model:mail.template,subject:purchase.email_template_edi_purchase
@@ -593,7 +593,7 @@ msgstr "Tất cả RFQ đang chờ"
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_res_config_settings__group_send_reminder
 msgid "Allow automatically send email to remind your vendor the receipt date"
-msgstr ""
+msgstr "Cho phép tự động gửi email để nhắc nhà cung cấp về ngày nhận hàng"
 
 #. module: purchase
 #: model:ir.model.fields.selection,name:purchase.selection__res_company__po_lock__edit
@@ -1643,12 +1643,12 @@ msgstr "Không tìm thấy sản phẩm. Hãy tạo một cái!"
 #. module: purchase
 #: model_terms:ir.actions.act_window,help:purchase.purchase_form_action
 msgid "No purchase order found. Let's create one!"
-msgstr ""
+msgstr "Không tìm thấy đơn mua hàng. Hãy tạo mới!"
 
 #. module: purchase
 #: model_terms:ir.actions.act_window,help:purchase.purchase_rfq
 msgid "No request for quotation found. Let's create one!"
-msgstr ""
+msgstr "Không tìm thấy yêu cầu báo giá nào. Hãy tạo mới!"
 
 #. module: purchase
 #: model_terms:ir.ui.view,arch_db:purchase.mail_notification_confirm

@@ -191,7 +191,9 @@ const FontFamilyPickerUserValueWidget = SelectUserValueWidget.extend({
                         let isValidFamily = false;
 
                         try {
-                            const result = await fetch("https://fonts.googleapis.com/css?family=" + encodeURIComponent(m[1]) + ':300,300i,400,400i,700,700i', {method: 'HEAD'});
+                            // Font family is an encoded query parameter:
+                            // "Open+Sans" needs to remain "Open+Sans".
+                            const result = await fetch("https://fonts.googleapis.com/css?family=" + m[1] + ':300,300i,400,400i,700,700i', {method: 'HEAD'});
                             // Google fonts server returns a 400 status code if family is not valid.
                             if (result.ok) {
                                 isValidFamily = true;
@@ -1224,6 +1226,17 @@ options.registry.ThemeColors = options.registry.OptionsTab.extend({
 
 options.registry.menu_data = options.Class.extend({
     /**
+     * @override
+     */
+    async start() {
+        await this._super(...arguments);
+        this.isWebsiteDesigner = await this._rpc({
+            'model': 'res.users',
+            'method': 'has_group',
+            'args': ['website.group_website_designer'],
+        });
+    },
+    /**
      * When the users selects a menu, a dialog is opened to ask him if he wants
      * to follow the link (and leave editor), edit the menu or do nothing.
      *
@@ -1231,19 +1244,21 @@ options.registry.menu_data = options.Class.extend({
      */
     onFocus: function () {
         var self = this;
-        (new Dialog(this, {
-            title: _t("Confirmation"),
-            $content: $(core.qweb.render('website.leaving_current_page_edition')),
-            buttons: [
-                {text: _t("Go to Link"), classes: 'btn-primary', click: function () {
+        const buttons = [
+            {
+                text: _t("Go to Link"), classes: 'btn-primary', click: function () {
                     self.trigger_up('request_save', {
                         reload: false,
                         onSuccess: function () {
                             window.location.href = self.$target.attr('href');
                         },
                     });
-                }},
-                {text: _t("Edit the menu"), classes: 'btn-primary', click: function () {
+                },
+            },
+        ];
+        if (this.isWebsiteDesigner) {
+            buttons.push({
+                text: _t("Edit the menu"), classes: 'btn-primary', click: function () {
                     this.trigger_up('action_demand', {
                         actionName: 'edit_menu',
                         params: [
@@ -1258,9 +1273,15 @@ options.registry.menu_data = options.Class.extend({
                             },
                         ],
                     });
-                }},
-                {text: _t("Stay on this page"), close: true}
-            ]
+                },
+            });
+        }
+        buttons.push({text: _t("Stay on this page"), close: true});
+
+        (new Dialog(this, {
+            title: _t("Confirmation"),
+            $content: $(core.qweb.render('website.leaving_current_page_edition')),
+            buttons: buttons,
         })).open();
     },
 });
@@ -1938,6 +1959,15 @@ options.registry.HeaderNavbar = options.Class.extend({
     //--------------------------------------------------------------------------
 
     /**
+     * @override
+     */
+    async start() {
+        await this._super(...arguments);
+        // TODO Remove in master.
+        const signInOptionEl = this.el.querySelector('[data-customize-website-views="portal.user_sign_in"]');
+        signInOptionEl.dataset.noPreview = 'true';
+    },
+    /**
      * @private
      */
     async updateUI() {
@@ -2272,10 +2302,9 @@ options.registry.anchor = options.Class.extend({
         this.$button = this.$el.find('we-button');
         const clipboard = new ClipboardJS(this.$button[0], {text: () => this._getAnchorLink()});
         clipboard.on('success', () => {
-            const anchor = decodeURIComponent(this._getAnchorLink());
             this.displayNotification({
               type: 'success',
-              message: _.str.sprintf(_t("Anchor copied to clipboard<br>Link: %s"), anchor),
+              message: _.str.sprintf(_t("Anchor copied to clipboard<br>Link: %s"), this._getAnchorLink()),
               buttons: [{text: _t("Edit"), click: () => this.openAnchorDialog(), primary: true}],
             });
         });

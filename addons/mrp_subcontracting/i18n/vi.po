@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* mrp_subcontracting
-#
+# 
 # Translators:
 # Martin Trigaux, 2020
 # fanha99 <fanha99@hotmail.com>, 2020
@@ -11,14 +11,15 @@
 # Dao Nguyen <trucdao.uel@gmail.com>, 2020
 # Trần Hà <tranthuha13590@gmail.com>, 2021
 # Duy BQ <duybq86@gmail.com>, 2021
-#
+# Thi Huong Nguyen, 2023
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~13.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-01 07:29+0000\n"
 "PO-Revision-Date: 2020-09-07 08:15+0000\n"
-"Last-Translator: Duy BQ <duybq86@gmail.com>, 2021\n"
+"Last-Translator: Thi Huong Nguyen, 2023\n"
 "Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -337,10 +338,10 @@ msgstr ""
 #: code:addons/mrp_subcontracting/models/mrp_production.py:0
 #, python-format
 msgid "You must enter a serial number for %s"
-msgstr "Bạn phải nhập một số serial cho %s"
+msgstr "Bạn phải nhập một số sê-ri cho %s"
 
 #. module: mrp_subcontracting
 #: code:addons/mrp_subcontracting/models/mrp_production.py:0
 #, python-format
 msgid "You must enter a serial number for each line of %s"
-msgstr "Bạn phải nhập một số serial cho từng dòng của %s"
+msgstr "Bạn phải nhập một số sê-ri cho từng dòng của %s"

@@ -2861,7 +2861,7 @@ msgstr ""
 #. module: event
 #: model:event.event,name:event.event_7
 msgid "OpenWood Collection Online Reveal"
-msgstr "Revelación en línea de la colección OpenWood"
+msgstr "Presentación en línea de la colección de OpenWood"
 
 #. module: event
 #: model:res.partner,website_short_description:event.res_partner_event_2
@@ -3765,8 +3765,8 @@ msgid ""
 "You can also add a description to help your coworkers understand the meaning"
 " and purpose of the stage."
 msgstr ""
-"Puede incluso añadir una descripción para ayudar a sus compañeros de trabajo"
-" a entender el significado y el propósito de esta etapa."
+"Incluso puede agregar una descripción para ayudar a sus compañeros de "
+"trabajo a entender el significado y el propósito de esta etapa."
 
 #. module: event
 #: model_terms:ir.ui.view,arch_db:event.event_stage_view_form

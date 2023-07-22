@@ -9020,7 +9020,7 @@ msgstr "Nomor Akun harus unik"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_users_form_simple_modif
 msgid "Account Security"
-msgstr ""
+msgstr "Keamanan Akun"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_taxcloud
@@ -9645,7 +9645,7 @@ msgstr "Administrasi"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_N
 msgid "Administrative"
-msgstr ""
+msgstr "Administratif"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_country_state__name
@@ -18125,7 +18125,7 @@ msgstr ""
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.module_view_kanban
 msgid "Learn More"
-msgstr ""
+msgstr "Pelajari Lebih"
 
 #. module: base
 #: model:res.country,name:base.lb
@@ -21961,7 +21961,7 @@ msgstr ""
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_S
 msgid "Other Services"
-msgstr ""
+msgstr "Layanan Lain"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_model_form
@@ -23207,7 +23207,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_quotation_builder
 msgid "Quotation Builder"
-msgstr ""
+msgstr "Pembuat Quotation"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_expense
@@ -26696,7 +26696,7 @@ msgstr "Format Waktu"
 #: model:ir.module.category,name:base.module_category_human_resources_time_off
 #: model:ir.module.module,shortdesc:base.module_hr_holidays
 msgid "Time Off"
-msgstr ""
+msgstr "Cuti"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_payroll_holidays

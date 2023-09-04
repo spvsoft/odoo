@@ -809,7 +809,7 @@ msgstr "Selalu Mengizinkan"
 #: code:addons/mail/models/res_partner.py:0
 #, python-format
 msgid "An email is required for find_or_create to work"
-msgstr ""
+msgstr "Email dibutuhkan agar for find_or_create dapat bekerja"
 
 #. module: mail
 #. openerp-web
@@ -5674,14 +5674,14 @@ msgstr ""
 #: code:addons/mail/static/src/components/chat_window_header/chat_window_header.xml:0
 #, python-format
 msgid "Shift left"
-msgstr ""
+msgstr "Geser ke kiri"
 
 #. module: mail
 #. openerp-web
 #: code:addons/mail/static/src/components/chat_window_header/chat_window_header.xml:0
 #, python-format
 msgid "Shift right"
-msgstr ""
+msgstr "Geser ke kanan"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_mail__description

@@ -785,7 +785,7 @@ msgstr "الموقع المسموح به "
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_orderpoint__allowed_route_ids
 msgid "Allowed Route"
-msgstr ""
+msgstr "المسار المسموح به "
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_inventory__prefill_counted_quantity
@@ -8058,8 +8058,10 @@ msgstr "لا يمكنك تقسيم حركه مسودة. تحتاج للتأكي�
 #. module: stock
 #: code:addons/stock/models/stock_move.py:0
 #, python-format
-msgid "You cannot split a stock move that has been set to 'Done'."
-msgstr "لا يمنكك تقسيم حركة مخزون فى الحالة 'منتهية'."
+msgid "You cannot split a stock move that has been set to 'Done' or 'Cancel'."
+msgstr ""
+"لا يمنكك تقسيم حركة مخزون تم تعيين حالتها إلى \"تم الانتهاء\" أو \"تم "
+"الإلغاء\".  "
 
 #. module: stock
 #: code:addons/stock/models/stock_quant.py:0

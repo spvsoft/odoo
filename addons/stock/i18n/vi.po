@@ -8174,8 +8174,7 @@ msgstr ""
 #, python-format
 msgid "You cannot split a stock move that has been set to 'Done'."
 msgstr ""
-"Bạn không thể tách một dịch chuyển đã được chuyển sang trạng thái 'Hoàn "
-"thành'"
+"Bạn không thể tách một dịch chuyển đã được chuyển sang trạng thái 'Hoàn thành'."
 
 #. module: stock
 #: code:addons/stock/models/stock_quant.py:0

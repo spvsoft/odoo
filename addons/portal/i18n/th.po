@@ -64,7 +64,7 @@ msgstr ""
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_layout
 msgid "<i class=\"fa fa-pencil\"/> Edit"
-msgstr ""
+msgstr "<i class=\"fa fa-pencil\"/> แก้ไข"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_searchbar
@@ -211,7 +211,7 @@ msgstr ""
 #. module: portal
 #: model:ir.model.fields,help:portal.field_portal_share__note
 msgid "Add extra content to display in the email"
-msgstr ""
+msgstr "เพิ่มเนื้อหาเพิ่มเติมเพื่อแสดงในอีเมล"
 
 #. module: portal
 #: code:addons/portal/controllers/mail.py:0
@@ -363,6 +363,7 @@ msgid ""
 "Currently available to everyone viewing this document, click to restrict to "
 "internal employees."
 msgstr ""
+"ขณะนี้เปิดให้ทุกคนที่ดูเอกสารนี้ คลิกเพื่อจำกัดเฉพาะพนักงานภายในเท่านั้น"
 
 #. module: portal
 #. openerp-web
@@ -372,6 +373,8 @@ msgid ""
 "Currently restricted to internal employees, click to make it available to "
 "everyone viewing this document."
 msgstr ""
+"ขณะนี้จำกัดเฉพาะพนักงานภายในเท่านั้น "
+"คลิกเพื่อให้ทุกคนที่ดูเอกสารนี้สามารถใช้ได้"
 
 #. module: portal
 #: model:ir.model.fields,help:portal.field_portal_mixin__access_url
@@ -444,7 +447,7 @@ msgstr "เธรดอีเมล"
 #: code:addons/portal/static/src/xml/portal_chatter.xml:0
 #, python-format
 msgid "Employees Only"
-msgstr ""
+msgstr "เฉพาะพนักงานเท่านั้น"
 
 #. module: portal
 #. openerp-web
@@ -541,7 +544,7 @@ msgstr "อัพเดทครั้งสุดท้ายเมื่อ"
 #: code:addons/portal/static/src/xml/portal_chatter.xml:0
 #, python-format
 msgid "Leave a comment"
-msgstr ""
+msgstr "แสดงความคิดเห็น"
 
 #. module: portal
 #: model:ir.model.fields,field_description:portal.field_portal_share__share_link
@@ -610,7 +613,7 @@ msgstr "โลโก้ Odoo "
 #: code:addons/portal/static/src/xml/portal_chatter.xml:0
 #, python-format
 msgid "Oops! Something went wrong. Try to reload the page and log in."
-msgstr ""
+msgstr "อ๊ะ! มีบางอย่างผิดพลาด ลองโหลดหน้านี้อีกครั้งและเข้าสู่ระบบ"
 
 #. module: portal
 #. openerp-web
@@ -848,7 +851,7 @@ msgstr "รหัสผ่านเดิมผิด รหัสผ่าน�
 #: code:addons/portal/static/src/xml/portal_chatter.xml:0
 #, python-format
 msgid "There are no comments for now."
-msgstr ""
+msgstr "ไม่มีความคิดเห็นในขณะนี้"
 
 #. module: portal
 #: code:addons/portal/controllers/portal.py:0
@@ -999,7 +1002,7 @@ msgstr "วิซาร์ด"
 #: code:addons/portal/static/src/xml/portal_chatter.xml:0
 #, python-format
 msgid "Write a message..."
-msgstr ""
+msgstr "เริ่มเขียนข้อความ..."
 
 #. module: portal
 #: code:addons/portal/wizard/portal_share.py:0
@@ -1024,7 +1027,7 @@ msgstr ""
 #: code:addons/portal/static/src/xml/portal_chatter.xml:0
 #, python-format
 msgid "You must be"
-msgstr ""
+msgstr "คุณจะต้องเป็น"
 
 #. module: portal
 #: code:addons/portal/wizard/portal_wizard.py:0
@@ -1053,7 +1056,7 @@ msgstr "รหัสไปรษณีย์"
 #: code:addons/portal/static/src/xml/portal_chatter.xml:0
 #, python-format
 msgid "avatar"
-msgstr ""
+msgstr "สัญลักษณ์"
 
 #. module: portal
 #. openerp-web
@@ -1067,14 +1070,14 @@ msgstr "ความเห็น"
 #: code:addons/portal/static/src/xml/portal_chatter.xml:0
 #, python-format
 msgid "comments"
-msgstr ""
+msgstr "ความคิดเห็น"
 
 #. module: portal
 #. openerp-web
 #: code:addons/portal/static/src/xml/portal_chatter.xml:0
 #, python-format
 msgid "logged in"
-msgstr ""
+msgstr "เข้าสู่ระบบ"
 
 #. module: portal
 #: model_terms:ir.ui.view,arch_db:portal.portal_record_sidebar
@@ -1096,4 +1099,4 @@ msgstr "เลือก..."
 #: code:addons/portal/static/src/xml/portal_chatter.xml:0
 #, python-format
 msgid "to post a comment."
-msgstr ""
+msgstr "แสดงความคิดเห็น"

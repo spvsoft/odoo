@@ -850,7 +850,7 @@ msgstr "您確定要放棄 %s 郵件傳送失敗嗎？您以後將無法重新�
 #: code:addons/mail/models/mail_thread_blacklist.py:0
 #, python-format
 msgid "Are you sure you want to unblacklist this Email Address?"
-msgstr ""
+msgstr "確定要取消此電郵地址的黑名單嗎？"
 
 #. module: mail
 #. openerp-web
@@ -1358,7 +1358,7 @@ msgstr "逗號分隔的收件人地址（可以在這裡使用佔位符）"
 #: model:ir.model.fields.selection,name:mail.selection__mail_message__message_type__comment
 #: model_terms:ir.ui.view,arch_db:mail.view_mail_search
 msgid "Comment"
-msgstr "評論"
+msgstr "註釋"
 
 #. module: mail
 #: model:ir.model,name:mail.model_res_company
@@ -1750,7 +1750,7 @@ msgstr "投遞失敗"
 #: code:addons/mail/static/src/components/message/message.xml:0
 #, python-format
 msgid "Delivery failure"
-msgstr ""
+msgstr "傳送失敗"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_mail_channel__description
@@ -3386,7 +3386,7 @@ msgstr "記錄備註"
 #: model:ir.model.fields,field_description:mail.field_mail_notification__mail_id
 #, python-format
 msgid "Mail"
-msgstr "信件"
+msgstr "郵件"
 
 #. module: mail
 #: model:ir.model.fields,field_description:mail.field_ir_model__is_mail_activity
@@ -3418,7 +3418,7 @@ msgstr "mixin信件黑名單"
 #: code:addons/mail/static/src/components/moderation_reject_dialog/moderation_reject_dialog.xml:0
 #, python-format
 msgid "Mail Body"
-msgstr "信件內容"
+msgstr "郵件正文"
 
 #. module: mail
 #: model_terms:ir.ui.view,arch_db:mail.mail_channel_view_form
@@ -3724,7 +3724,7 @@ msgstr "訊息唯一編號"
 #: model:ir.model.fields,field_description:mail.field_mail_mail__message_id
 #: model:ir.model.fields,field_description:mail.field_mail_message__message_id
 msgid "Message-Id"
-msgstr "Message-Id"
+msgstr "訊息識別碼"
 
 #. module: mail
 #. openerp-web
@@ -6494,6 +6494,8 @@ msgid ""
 "Value for `mail.catchall.domain.allowed` cannot be validated.\n"
 "It should be a comma separated list of domains e.g. example.com,example.org."
 msgstr ""
+"未能驗證 mail.catchall.domain.allowed 的值。\n"
+"應是以逗號分隔的網域列表，例如：example.com,example.org。"
 
 #. module: mail
 #. openerp-web
@@ -6539,7 +6541,7 @@ msgstr "檢視類型"
 #: code:addons/mail/static/src/components/attachment/attachment.xml:0
 #, python-format
 msgid "View image"
-msgstr ""
+msgstr "查看圖片"
 
 #. module: mail
 #. openerp-web
@@ -6774,7 +6776,7 @@ msgstr ""
 msgid ""
 "You do not have the access right to unblacklist emails. Please contact your "
 "administrator."
-msgstr ""
+msgstr "你沒有從黑名單中移除電子郵件的存取權限。請聯絡你的管理員。"
 
 #. module: mail
 #: code:addons/mail/models/mail_channel.py:0

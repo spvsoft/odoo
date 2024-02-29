@@ -985,7 +985,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"        Datos de gastos no permitidos para Bélgica\n"
+"        Datos de gastos rechazados para Bélgica\n"
 "    "
 
 #. module: base
@@ -9660,7 +9660,7 @@ msgstr ""
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.demo_force_install_form
 msgid "<span class=\"text-white text-uppercase\">Danger Zone</span>"
-msgstr "<span class=\"text-white text-uppercase\">Zona de peligro</span>"
+msgstr "<span class=\"text-white text-uppercase\">Advertencia</span>"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.sequence_view
@@ -9671,8 +9671,8 @@ msgid ""
 "                                <span colspan=\"2\">Day: %(day)s</span>"
 msgstr ""
 "<span colspan=\"2\">Año actual con el siglo: %(year)s</span>\n"
-"                                <span colspan=\"2\"> Año actual sin siglo: %(y)s</span>\n"
-"                                <span colspan=\"2\"> Mes: %(month)s</span>\n"
+"                                <span colspan=\"2\">Año actual sin siglo: %(y)s</span>\n"
+"                                <span colspan=\"2\">Mes: %(month)s</span>\n"
 "                                <span colspan=\"2\">Día: %(day)s</span>"
 
 #. module: base
@@ -12297,7 +12297,7 @@ msgstr "Bélgica - Reportes contables"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_be_disallowed_expenses
 msgid "Belgium - Disallowed Expenses Data"
-msgstr "Bélgica - Gastos no permitidos"
+msgstr "Bélgica - Gastos rechazados"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_be_edi
@@ -14641,12 +14641,12 @@ msgstr "Dígitos decimales"
 #: model_terms:ir.ui.view,arch_db:base.view_decimal_precision_form
 #: model_terms:ir.ui.view,arch_db:base.view_decimal_precision_tree
 msgid "Decimal Precision"
-msgstr "Precisión decimales"
+msgstr "Precisión decimal"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_lang__decimal_point
 msgid "Decimal Separator"
-msgstr "Separador de decimales"
+msgstr "Separador decimal"
 
 #. module: base
 #: model:res.partner,website_short_description:base.res_partner_2
@@ -14963,7 +14963,7 @@ msgstr "Gastos rechazados"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_disallowed_expenses_fleet
 msgid "Disallowed Expenses on Fleets"
-msgstr "Gastos no permitidos en Flotas"
+msgstr "Gastos rechazados en Flotas"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.onboarding_container
@@ -16750,7 +16750,7 @@ msgstr "Encuentra registros duplicados y fusiónalos"
 #. module: base
 #: model:ir.module.module,summary:base.module_web_unsplash
 msgid "Find free high-resolution images from Unsplash"
-msgstr "Encuentre imágenes gratuitas de alta resolución de Unsplash"
+msgstr "Encuentre imágenes gratuitas de alta resolución con Unsplash"
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__base_partner_merge_automatic_wizard__state__finished
@@ -20504,12 +20504,12 @@ msgstr ""
 #: model:ir.module.module,description:base.module_account_disallowed_expenses
 #: model:ir.module.module,summary:base.module_account_disallowed_expenses
 msgid "Manage disallowed expenses"
-msgstr "Gestione gastos no permitidos"
+msgstr "Gestione gastos rechazados"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_account_disallowed_expenses_fleet
 msgid "Manage disallowed expenses with fleets"
-msgstr "Gestione gastos no permitidos con Flota"
+msgstr "Gestione gastos rechazados con Flota"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_coupon_taxcloud_delivery
@@ -20606,17 +20606,17 @@ msgstr "Gestione los registros de las nóminas de sus empleados"
 #. module: base
 #: model:ir.module.module,summary:base.module_planning
 msgid "Manage your employees' schedule"
-msgstr "Gestione el horario de tus empleados"
+msgstr "Gestione el horario de sus empleados"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_fleet
 msgid "Manage your fleet and track car costs"
-msgstr "Gestione su flota y rastrea los costes de los vehículos"
+msgstr "Gestione su flota y rastree los costos de los vehículos"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_hr_recruitment
 msgid "Manage your online hiring process"
-msgstr "Gestione su proceso de contratación online."
+msgstr "Gestione su proceso de contratación en línea"
 
 #. module: base
 #: model:ir.module.module,description:base.module_social
@@ -20627,7 +20627,7 @@ msgstr "Gestione las visitas que tienen sus redes sociales y su sitio web"
 #. module: base
 #: model:ir.module.module,summary:base.module_stock
 msgid "Manage your stock and logistics activities"
-msgstr "Gestione sus actividades de stock y logística."
+msgstr "Gestione sus actividades de inventario y logística"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_manufacturing
@@ -29208,8 +29208,8 @@ msgid ""
 "The path to the main report file (depending on Report Type) or empty if the "
 "content is in another field"
 msgstr ""
-"La ruta al fichero del informe principal (dependiendo del tipo de informe) o"
-" vacío si el contenido es otro campo"
+"La ruta al archivo del reporte principal (según el tipo de reporte) o vacío "
+"si el contenido está en otro campo"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_cron__priority

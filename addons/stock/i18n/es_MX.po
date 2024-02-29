@@ -220,7 +220,7 @@ msgid ""
 "            Manual actions may be needed."
 msgstr ""
 ".\n"
-"            Puede que se necesiten acciones manuales."
+"            Es posible que se necesiten acciones manuales."
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__stock_orderpoint_snooze__predefined_date__day
@@ -7890,7 +7890,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_putaway_rule__location_in_id
 msgid "When product arrives in"
-msgstr "Cuando llega el producto"
+msgstr "Cuando el producto llega a"
 
 #. module: stock
 #: code:addons/stock/models/stock_rule.py:0

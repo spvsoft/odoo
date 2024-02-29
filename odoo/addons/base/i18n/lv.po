@@ -10845,7 +10845,7 @@ msgstr "Uzņēmums"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.onboarding_company_step
 msgid "Company Data"
-msgstr ""
+msgstr "Rekvizīti"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_company__favicon
@@ -15824,7 +15824,7 @@ msgstr "Importēt / Eksportēt"
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_amazon
 msgid "Import Amazon orders and sync deliveries"
-msgstr ""
+msgstr "Importēt Amazon pasūtījumus un sinhronizēt piegādes"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_bank_statement_import_camt
@@ -20554,7 +20554,7 @@ msgstr ""
 #: model_terms:ir.actions.act_window,help:base.action_partner_customer_form
 #: model_terms:ir.actions.act_window,help:base.action_partner_form
 msgid "Odoo helps you easily track all activities related to a customer."
-msgstr ""
+msgstr "Odoo palīdz viegli izsekot visām ar klientu saistītajām darbībām."
 
 #. module: base
 #: model_terms:ir.actions.act_window,help:base.action_partner_supplier_form

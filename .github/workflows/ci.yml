@@ -1,3 +1,10 @@
+name: Deploy Odoo to AWS EC2
+
+on:
+  push:
+    branches:
+      - 17.0   # Chỉ chạy workflow khi có push lên nhánh 17.0
+
 jobs:
   deploy:
     runs-on: ubuntu-latest

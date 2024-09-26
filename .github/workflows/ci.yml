@@ -1,3 +1,13 @@
+name: Deploy Odoo to AWS EC2
+
+on:
+  push:
+    branches:
+      - 17.0   # Chạy workflow khi có bất kỳ lệnh push nào lên nhánh 17.0
+  pull_request:
+    branches:
+      - 17.0   # Chạy workflow khi có pull request lên nhánh 17.0
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -21,4 +31,3 @@ jobs:
 
     - name: Copy files to EC2
       run: |
-        scp -r * ubuntu@52.65.35.193:/home/ubuntu/odoo/

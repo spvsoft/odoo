@@ -68,6 +68,48 @@
 #         EOF
 
 
+# name: Deploy Odoo 17 to AWS EC2
+
+# on:
+#   push:
+#     branches:
+#       - main
+#       - 17.0  # Triển khai khi có thay đổi trên nhánh 17.0
+
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#     - name: Checkout code
+#       uses: actions/checkout@v2
+
+#     - name: Set up SSH
+#       uses: webfactory/ssh-agent@v0.5.3
+#       with:
+#         ssh-private-key: {{ secrets.SSH_PRIVATE_KEY }}
+
+#     - name: Add EC2 to known hosts
+#       run: |
+#         ssh-keyscan -H 52.65.35.193 >> ~/.ssh/known_hosts
+
+#     - name: Copy Odoo files to EC2
+#       run: |
+#         scp -r odoo/* ubuntu@52.65.35.193:/home/ubuntu/odoo/
+
+#     - name: Set permissions on EC2
+#       run: |
+#         ssh ubuntu@52.65.35.193 "chmod -R 755 /home/ubuntu/odoo"
+
+#     - name: Deploy Odoo to EC2 using Docker Compose
+#       run: |
+#         ssh ubuntu@52.65.35.193 <<EOF
+#           cd /home/ubuntu/odoo
+#           docker-compose pull
+#           docker-compose up -d --build
+#         EOF
+
+
 name: Deploy Odoo 17 to AWS EC2
 
 on:
@@ -95,11 +137,7 @@ jobs:
 
     - name: Copy Odoo files to EC2
       run: |
-        scp -r odoo/* ubuntu@52.65.35.193:/home/ubuntu/odoo/
-
-    - name: Set permissions on EC2
-      run: |
-        ssh ubuntu@52.65.35.193 "chmod -R 755 /home/ubuntu/odoo"
+        scp -r * ubuntu@52.65.35.193:/home/ubuntu/odoo/
 
     - name: Deploy Odoo to EC2 using Docker Compose
       run: |
@@ -108,3 +146,7 @@ jobs:
           docker-compose pull
           docker-compose up -d --build
         EOF
+
+    - name: Verify deployment
+      run: |
+        ssh ubuntu@52.65.35.193 "docker ps | grep odoo"
